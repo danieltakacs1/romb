@@ -14,9 +14,15 @@ public class rombTest {
     }
 
     @Test
-    public void testCalcArea(){
-        double actual = this.romb.calcArea(20);
-        double expected = 40;
+    public void testCalcArea_20_40(){
+        double actual = this.romb.calcArea(20, 40);
+        double expected = 257.1;
+        Assert.assertEquals(actual, expected, 0.1, "Hiba!");
+    }
+    @Test
+    public void testCalcPerimeter_30(){
+        double actual = this.romb.calcPerimeter(30);
+        double expected = 120;
         Assert.assertEquals(actual, expected, 0.1, "Hiba!");
     }
 }
