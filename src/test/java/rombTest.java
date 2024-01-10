@@ -31,4 +31,8 @@ public class rombTest {
     public void testCaclArea_Zero_Angle() {
         this.romb.calcArea(1, 0);
     }
+    @Test(expectedExceptions = InputMismatchException.class)
+    public void testCaclPerimeter_Zero_Side() {
+        this.romb.calcPerimeter(0);
+    }
 }
